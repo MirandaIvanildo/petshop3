@@ -1,0 +1,156 @@
+body {
+    background-color: #f1f1f1;
+	/*text-indent: 0px;*/
+	margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(0, 0, 0)
+	/*background: url(images/bob-esponja.gif);*/
+
+}
+
+nav {
+    background-color: rgb(219, 63, 15);
+	/*margin: 40px 0 0 0px;*/
+    /*display: flex;*/
+	flex-direction: row;
+	border-radius: 2px;  /* border-radius, si você colocar 20px vai ficar na forma de bola, ou seja os contos vão ficar redondo ya*/
+	position: fixed;
+	background: rgb(13, 224, 31);
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+nav ul li{
+	display: inline;
+}
+ nav ul li a {
+	background: transparent;
+	margin: 0 5px 0 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+ }
+
+
+nav ul li a:hover {
+   color: rgb(56, 4, 4);
+   font-weight:bold;
+   
+}
+
+.chevron{
+	background-color: rgb(17, 0, 255);
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 80;
+	right: 0;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+
+.chevron:hover {
+	box-shadow: 3px 3px 3px #333333;
+	background-color: aqua;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 4px 3px #333;
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 140px 0 0 0;
+	/*border: 2px solid hsl(0, 78%, 16%);*/
+    color: #69E85F
+	
+}
+
+
+h2  {
+	font-size: 24px;
+	color: #fefefe;
+	background-color: rgb(red, green, blue);
+	text-indent: 20px;
+	/*text-transform: uppercase;*/
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	margin: 20px auto 20px auto;
+	border-radius: 20px 0 20px 0;
+}
+
+.fundo_rosa{
+	background-color: rgb(118, 184, 11);
+
+}
+.fundo_rosa:hover {
+	box-shadow: 3px 3px 3px #333333;
+	background-color: aqua;
+}
+
+.fundo_verde{
+	background-color: rgb(68, 0, 255);
+}
+
+.fundo_branco{
+	background-color: rgb(168, 11, 43);
+}
+
+
+/*
+	Informações a respeitos dos membros da página
+*/
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.member {
+	width: 300px;
+	height: 400px;
+	margin-bottom: 30px;
+	background-color: #f1f1f1;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.member img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.member h3 {
+	margin-top: 0;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.member p {
+	margin-bottom: 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 399px) {   /* isso pode ser minimo tambem ou seja pode usar min-width no lugar de max-width. 2500 vai ocupar tela toda*/
+	body {
+		background:green;
+	}
+}
